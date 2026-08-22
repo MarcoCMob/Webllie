@@ -1,0 +1,53 @@
+.game-header {
+  width: min(100%, 26rem);
+  margin: 0 auto 1.25rem;
+  text-align: center;
+}
+
+.game-header-title {
+  font-size: clamp(1.7rem, 5vw, 2.1rem);
+}
+
+.game-header-difficulty {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 0.9rem;
+}
+
+.difficulty-pill {
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--color-blush) 70%, white);
+  background: var(--color-cream);
+  color: var(--color-muted);
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.difficulty-pill:hover {
+  background: color-mix(in srgb, var(--color-blush) 40%, var(--color-cream));
+}
+
+.difficulty-pill--active {
+  background: var(--color-rose);
+  border-color: var(--color-rose);
+  color: #fff;
+}
+
+.game-header-stats {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-top: 0.9rem;
+  color: var(--color-muted);
+  font-size: 0.95rem;
+}
+
+.game-header-stat {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}

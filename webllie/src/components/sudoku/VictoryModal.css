@@ -1,0 +1,64 @@
+.victory-overlay {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: color-mix(in srgb, var(--color-ink) 45%, transparent);
+  padding: 1.5rem;
+  z-index: 50;
+}
+
+.victory-card {
+  width: min(100%, 24rem);
+  background: var(--color-cream);
+  border-radius: calc(var(--radius) + 4px);
+  box-shadow: var(--shadow-soft);
+  padding: 2.25rem 1.75rem;
+  text-align: center;
+}
+
+.victory-title {
+  font-family: var(--font-display);
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: var(--color-rose-deep);
+}
+
+.victory-stats {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 1.5rem 0 0;
+}
+
+.victory-stat dt {
+  font-size: 0.8rem;
+  color: var(--color-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.victory-stat dd {
+  margin: 0.25rem 0 0;
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--color-ink);
+}
+
+.victory-cta {
+  margin-top: 2rem;
+  padding: 0.85rem 1.6rem;
+  border-radius: 999px;
+  border: none;
+  background: var(--color-rose);
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.victory-cta:hover {
+  background: var(--color-rose-deep);
+  transform: translateY(-1px);
+}

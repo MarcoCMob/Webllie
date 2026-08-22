@@ -1,0 +1,65 @@
+.sudoku-board {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+  width: min(100%, 26rem);
+  aspect-ratio: 1 / 1;
+  margin-inline: auto;
+  background: var(--color-cream);
+  border: 2px solid var(--color-rose-deep);
+  border-radius: calc(var(--radius) - 6px);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+}
+
+.sudoku-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: clamp(0.95rem, 3.6vw, 1.35rem);
+  font-weight: 500;
+  color: var(--color-ink);
+  background: transparent;
+  border: 1px solid color-mix(in srgb, var(--color-blush) 55%, transparent);
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.sudoku-cell--given {
+  color: var(--color-rose-deep);
+  font-weight: 600;
+  cursor: default;
+}
+
+.sudoku-cell--input {
+  color: var(--color-ink);
+}
+
+.sudoku-cell--selected {
+  background: color-mix(in srgb, var(--color-rose) 22%, var(--color-cream));
+}
+
+.sudoku-cell--error {
+  color: #b3261e;
+  background: color-mix(in srgb, #b3261e 12%, var(--color-cream));
+}
+
+.sudoku-cell--border-right {
+  border-right: 2px solid var(--color-rose-deep);
+}
+
+.sudoku-cell--border-bottom {
+  border-bottom: 2px solid var(--color-rose-deep);
+}
+
+.sudoku-cell:hover:not(.sudoku-cell--given) {
+  background: color-mix(in srgb, var(--color-blush) 45%, var(--color-cream));
+}
+
+.sudoku-cell:focus-visible {
+  outline: 2px solid var(--color-rose);
+  outline-offset: -2px;
+  z-index: 1;
+}
