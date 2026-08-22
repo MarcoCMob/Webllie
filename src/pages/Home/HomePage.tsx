@@ -18,8 +18,8 @@ export function HomePage() {
         <h1 className="home-title">Hola, {site.dedicatee}</h1>
         <p className="home-lead">{site.tagline}</p>
         <p className="home-copy">
-          Este es un pequeño lugar solo para nosotras: cálido, tranquilo y con un
-          Sudoku esperándote cuando quieras jugar.
+          Este es un pequeño lugar para relajarse.
+          Siempre hay un Sudoku esperándote cuando quieras jugar.
         </p>
         <Link className="home-cta" to={paths.sudoku}>
           <Sparkles size={18} />
