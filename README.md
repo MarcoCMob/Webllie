@@ -1,1 +1,1 @@
-A ReactJS + Typescript sudoku web-based game.
+A ReactJS + Typescript sudoku game!
