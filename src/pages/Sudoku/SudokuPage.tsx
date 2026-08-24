@@ -115,7 +115,7 @@ export function SudokuPage() {
       <div className="sudoku-controls">
         <button type="button" className="sudoku-control-button" onClick={handleRestart}>
           <RotateCcw size={16} />
-          Reiniciar
+          Reset
         </button>
         <button
           type="button"
@@ -123,7 +123,7 @@ export function SudokuPage() {
           onClick={() => handleNewGame()}
         >
           <Shuffle size={16} />
-          Nuevo Sudoku
+          New Sudoku
         </button>
       </div>
 

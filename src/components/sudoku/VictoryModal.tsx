@@ -44,25 +44,25 @@ export function VictoryModal({
             exit={{ opacity: 0, y: 16, scale: 0.96 }}
             transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
           >
-            <p className="victory-title">¡Lo lograste! 💗</p>
+            <p className="victory-title">¡You made it! 💗</p>
 
             <dl className="victory-stats">
               <div className="victory-stat">
-                <dt>Tiempo</dt>
+                <dt>Time</dt>
                 <dd>{formatTime(seconds)}</dd>
               </div>
               <div className="victory-stat">
-                <dt>Errores</dt>
+                <dt>Errors</dt>
                 <dd>{mistakeCount}</dd>
               </div>
               <div className="victory-stat">
-                <dt>Dificultad</dt>
+                <dt>Difficulty</dt>
                 <dd>{DIFFICULTY_LABELS[difficulty]}</dd>
               </div>
             </dl>
 
             <button type="button" className="victory-cta" onClick={onPlayAgain}>
-              Jugar otra vez
+              Play again
             </button>
           </motion.div>
         </motion.div>

@@ -4,9 +4,9 @@ import { formatTime } from '../../hooks/useTimer'
 import './GameHeader.css'
 
 const DIFFICULTY_LABELS: Record<Difficulty, string> = {
-  easy: 'Fácil',
-  medium: 'Medio',
-  hard: 'Difícil',
+  easy: 'Easy',
+  medium: 'Medium',
+  hard: 'Hard',
 }
 
 const DIFFICULTIES: Difficulty[] = ['easy', 'medium', 'hard']

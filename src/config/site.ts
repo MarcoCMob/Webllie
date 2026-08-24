@@ -1,5 +1,5 @@
 export const site = {
   name: 'Webllie',
-  dedicatee: 'Ellie',
-  tagline: 'Un rinconcito hecho para ti.',
+  dedicatee: '-',
+  tagline: 'A little place made for you.',
 } as const

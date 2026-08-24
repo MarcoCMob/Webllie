@@ -14,16 +14,15 @@ export function HomePage() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
       >
-        <p className="home-kicker">Hecho con cariño</p>
-        <h1 className="home-title">Hola, {site.dedicatee}</h1>
+        <p className="home-kicker">Made with love.</p>
+        <h1 className="home-title">Hey...</h1>
         <p className="home-lead">{site.tagline}</p>
         <p className="home-copy">
-          Este es un pequeño lugar para relajarse.
-          Siempre hay un Sudoku esperándote cuando quieras jugar.
+          There is always a sudoku ready for you.
         </p>
         <Link className="home-cta" to={paths.sudoku}>
           <Sparkles size={18} />
-          Entrar
+          Play Sudoku
         </Link>
       </motion.div>
     </section>
